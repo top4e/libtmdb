@@ -1,17 +1,71 @@
-# Object files
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+# Normal rules
+#
+.*
 *.o
-
-# Libraries
-*.lib
 *.a
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
-*.so.*
-*.dylib
+*.elf
+*.bin
+*.gz
+*.bz2
+*.lzma
+*.xz
+*.lzo
+*.patch
+*.lo
+*.la
+*.in
+configure
+config.cache-env
+config.guess
+config.sub
+ABOUT-NLS
+aclocal.m4
+autom4te.cache/
+compile
+depcomp
+install-sh
+ltmain.sh
+missing
+#
+# Top-level generic files
+#
+m4/*
+#
+# git files that we don't want to ignore even if they are dot-files
+#
+!.gitignore
+!*.pc.in
+!configure.ac
+#
+# Generated include files
 
-# Executables
-*.exe
-*.out
-*.app
+# stgit generated dirs
+patches-*
+
+# quilt's files
+patches
+series
+
+# cscope files
+cscope.*
+ncscope.*
+
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+*.orig
+*~
+\#*#
